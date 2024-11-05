@@ -1,0 +1,33 @@
+{
+  "name": "feedback-summarizer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/app.js",
+    "start:dev": "nodemon",
+    "build": "tsc",
+    "dev": "ts-node src/app.ts",
+    "produce": "node dist/kafka/producer.js",
+    "consume": "node dist/kafka/consumer.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1691.0",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "kafka-node": "^5.0.0",
+    "kafkajs": "^2.2.4",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.4",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.3"
+  }
+}
