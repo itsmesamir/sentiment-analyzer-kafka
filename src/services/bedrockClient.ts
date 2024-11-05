@@ -28,6 +28,5 @@ export const analyzeFeedback = async (feedback: string) => {
 
   const response = await bedrock.invokeModel(params).promise();
 
-  console.log("Response from bedrock:", response);
   return JSON.parse(response.body as string);
 };
